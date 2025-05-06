@@ -30,10 +30,9 @@ def get_index_given_character(s, c):
     :param c: A character within the string.
     :return: The index of the first occurrence of the character within the string.
     """
-    if c in s:
-        return s.index(c)
-    else:
-        return 0
+    if c == '':
+        return -1
+    return s.find(c)
 
 def string_slicing(s, start, end):
     """
